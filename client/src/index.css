@@ -1,0 +1,6 @@
+@import "tailwindcss";
+
+/* CSS variables */
+:root {
+  --primary-color: #a42926;
+}
