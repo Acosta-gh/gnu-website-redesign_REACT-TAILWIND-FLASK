@@ -1,8 +1,66 @@
 {
-    "ABOUT_GNU": "À PROPOS DE GNU",
-    "PHILOSOPHY": "PHILOSOPHIE",
-    "SOFTWARE": "LOGICIEL",
-    "HELP_GNU": "AIDER GNU",
-    "DOCS": "DOCUMENTS",
-    "whatIsGNU": "Qu'est-ce que GNU?"
+  "headerMenu": [
+    {
+      "key": "aboutGnu",
+      "label": "À PROPOS DE GNU",
+      "to": "/about"
+    },
+    {
+      "key": "philosophy",
+      "label": "PHILOSOPHIE",
+      "to": "/philosophy"
+    },
+    {
+      "key": "software",
+      "label": "LOGICIELS",
+      "to": "/software"
+    },
+    {
+      "key": "helpGnu",
+      "label": "AIDER GNU",
+      "to": "/help"
+    },
+    {
+      "key": "docs",
+      "label": "DOCUMENTATION",
+      "to": "/docs"
+    }
+  ],
+  "whatIsGNU": {
+    "title": "Qu'est-ce que GNU ?",
+    "text1": "GNU est un système d'exploitation constitué de <url>logiciels libres</url>, ce qui signifie qu'il respecte la liberté des utilisateurs. Le système GNU comprend des paquets GNU (programmes publiés par le projet GNU) et des logiciels libres de tiers. Le développement de GNU a rendu possible l'utilisation d'un ordinateur sans logiciel qui restreint votre liberté.",
+    "text2": "Nous recommandons les <url>versions installables de GNU</url> (plus précisément, des distributions GNU/Linux) composées uniquement de logiciels libres. <url2>En savoir plus sur GNU ci-dessous</url2>.",
+    "buttonText": "Essayer GNU/Linux"
+  },
+  "slidesTexts": [
+    "Dragora 3.0-beta2 avec l’environnement de bureau TDE",
+    "Guix 0.15 avec l’environnement GNOME 3, le navigateur Epiphany, le lecteur vidéo Totem et l’émulateur de terminal GNOME",
+    "Hyperbola 0.3 avec le gestionnaire de fenêtres i3, cool-retro-term (émulateur de terminal), Gimp (éditeur d’images) et Iceweasel-UXP (navigateur web)",
+    "Parabola 2020 avec l’environnement de bureau LXDE",
+    "PureOS 8 avec l’environnement GNOME 3, PureBrowser (navigateur web) et Gimp (éditeur d’images)",
+    "Trisquel 10 avec l’environnement MATE et une partie de la suite LibreOffice"
+  ],
+  "freeSoftwareMovement": {
+    "title": "Qu'est-ce que le Mouvement du Logiciel Libre ?",
+    "text": "Le mouvement du logiciel libre lutte pour la liberté des utilisateurs à travers le logiciel libre. Le logiciel libre donne le contrôle à l’utilisateur. Le logiciel non libre donne le contrôle à son développeur. Voir l’explication en vidéo."
+  },
+  "freeSoftware": {
+    "title": "Qu'est-ce qu'un Logiciel Libre ?",
+    "header": "Le logiciel libre donne aux utilisateurs la liberté d’exécuter, copier, distribuer, étudier, modifier et améliorer le logiciel.",
+    "text": "Le logiciel libre concerne la liberté, pas le prix. Pensez à “libre” comme dans “liberté d’expression”, pas comme dans “bière gratuite”. Il accorde aux utilisateurs quatre libertés essentielles :",
+    "freedoms": [
+      "La liberté d’exécuter le programme comme vous le souhaitez, pour n’importe quel usage (liberté 0).",
+      "La liberté d’étudier comment le programme fonctionne et de le modifier pour qu’il réponde à vos besoins (liberté 1). L’accès au code source est une condition préalable.",
+      "La liberté de redistribuer des copies afin d’aider les autres (liberté 2).",
+      "La liberté de distribuer vos versions modifiées (liberté 3), afin que la communauté en bénéficie. L’accès au code source est une condition préalable."
+    ]
+  },
+  "text2": "Les développements technologiques et des réseaux rendent aujourd’hui ces libertés plus cruciales que jamais. Le mouvement du logiciel libre s’étend désormais bien au-delà du système GNU. Visitez la Free Software Foundation pour en savoir plus et découvrir comment vous pouvez aider.",
+  "moreAboutGnu": {
+    "title": "En Savoir Plus sur GNU",
+    "text1": "GNU est un système d’exploitation de type Unix. Cela signifie qu’il s’agit d’un ensemble de nombreux programmes : applications, bibliothèques, outils de développement, voire jeux. Le développement de GNU, commencé en janvier 1984, est connu sous le nom de projet GNU. Beaucoup de programmes GNU sont publiés sous l’égide du projet GNU ; ceux-là, nous les appelons paquets GNU.",
+    "text2": "Le nom « GNU » est un acronyme récursif de « GNU’s Not Unix ». « GNU » se prononce « gnou », en une seule syllabe, comme « nou », mais avec un g au début.",
+    "text3": "Le programme qui, dans un système de type Unix, gère les ressources de la machine et communique avec le matériel s’appelle le « noyau ». GNU est généralement utilisé avec un noyau appelé Linux. Cette combinaison forme le système d’exploitation GNU/Linux. GNU/Linux est utilisé par des millions de personnes, bien que beaucoup l’appellent à tort « Linux ».",
+    "buttonText": "Plus d’informations"
+  }
 }

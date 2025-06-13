@@ -1,8 +1,66 @@
 {
-  "ABOUT_GNU": "ABOUT GNU",
-  "PHILOSOPHY": "PHILOSOPHY",
-  "SOFTWARE": "SOFTWARE",
-  "HELP_GNU": "HELP GNU",
-  "DOCS": "DOCS",
-  "whatIsGNU": "What is GNU?"
+  "headerMenu": [
+    {
+      "key": "aboutGnu",
+      "label": "ABOUT GNU",
+      "to": "/about"
+    },
+    {
+      "key": "philosophy",
+      "label": "PHILOSOPHY",
+      "to": "/philosophy"
+    },
+    {
+      "key": "software",
+      "label": "SOFTWARE",
+      "to": "/software"
+    },
+    {
+      "key": "helpGnu",
+      "label": "HELP GNU",
+      "to": "/help"
+    },
+    {
+      "key": "docs",
+      "label": "DOCS",
+      "to": "/docs"
+    }
+  ],
+  "whatIsGNU": {
+    "title": "What is GNU?",
+    "text1": "GNU is an operating system that is <url>free software</url>—meaning it respects users' freedom. The GNU system includes GNU packages (programs released by the GNU Project) and free software from third parties. The development of GNU made it possible to use a computer without software that restricts your freedom.",
+    "text2": "We recommend <url>installable versions of GNU</url> (more precisely, GNU/Linux distributions) that are entirely free software. <url2>Learn more about GNU below</url2>.",
+    "buttonText": "Try GNU/Linux"
+  },
+  "slidesTexts": [
+    "Dragora 3.0-beta2 with the TDE desktop",
+    "Guix 0.15 with the GNOME 3 desktop, Epiphany browser, Totem video player, and GNOME terminal emulator",
+    "Hyperbola 0.3 with the i3 window manager, cool-retro-term (terminal emulator), Gimp (image editor), and Iceweasel-UXP (web browser)",
+    "Parabola 2020 with LXDE desktop",
+    "PureOS 8 with GNOME 3 desktop, PureBrowser (web browser), and Gimp (image editor)",
+    "Trisquel 10 with MATE desktop and part of the LibreOffice suite"
+  ],
+  "freeSoftwareMovement": {
+    "title": "What is the Free Software Movement?",
+    "text": "The free software movement fights for the freedom of users through free software. Free software gives control to the user. Nonfree software gives control to its developer. See the video explanation."
+  },
+  "freeSoftware": {
+    "title": "What is Free Software?",
+    "header": "Free software gives users the freedom to run, copy, distribute, study, change and improve the software.",
+    "text": "Free software is about liberty, not price. Think of “free” as in “free speech,” not “free beer.” It grants users four essential freedoms:",
+    "freedoms": [
+      "The freedom to run the program as you wish, for any purpose (freedom 0).",
+      "The freedom to study how the program works, and modify it to suit your needs (freedom 1). Access to the source code is a prerequisite.",
+      "The freedom to redistribute copies to help others (freedom 2).",
+      "The freedom to distribute your modified versions (freedom 3), so the community can benefit. Access to the source code is a prerequisite."
+    ]
+  },
+  "text2": "Technological and network developments have made these freedoms more vital today than ever before. The free software movement now extends far beyond the GNU system. Visit the Free Software Foundation to learn more and discover ways you can help.",
+  "moreAboutGnu": {
+    "title": "More About GNU",
+    "text1": "GNU is a Unix-like operating system. That means it is a collection of many programs: applications, libraries, developer tools, even games. The development of GNU, started in January 1984, is known as the GNU Project. Many of the programs in GNU are released under the auspices of the GNU Project; those we call GNU packages.",
+    "text2": "The name “GNU” is a recursive acronym for “GNU's Not Unix.” “GNU” is pronounced g'noo, as one syllable, like saying “grew” but replacing the r with n.",
+    "text3": "The program in a Unix-like system that allocates machine resources and talks to the hardware is called the “kernel.” GNU is typically used with a kernel called Linux. This combination is the GNU/Linux operating system. GNU/Linux is used by millions, though many call it “Linux” by mistake.",
+    "buttonText": "More information"
+  }
 }

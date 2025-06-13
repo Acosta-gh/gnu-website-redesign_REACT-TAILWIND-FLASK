@@ -1,8 +1,66 @@
 {
-    "ABOUT_GNU": "SOBRE GNU",
-    "PHILOSOPHY": "FILOSOFÍA",
-    "SOFTWARE": "SOFTWARE",
-    "HELP_GNU": "AYUDA A GNU",
-    "DOCS": "DOCUMENTACIÓN",
-    "whatIsGNU": "¿Qué es GNU?"
+    "headerMenu": [
+        {
+            "key": "aboutGnu",
+            "label": "SOBRE GNU",
+            "to": "/about"
+        },
+        {
+            "key": "philosophy",
+            "label": "FILOSOFÍA",
+            "to": "/philosophy"
+        },
+        {
+            "key": "software",
+            "label": "SOFTWARE",
+            "to": "/software"
+        },
+        {
+            "key": "helpGnu",
+            "label": "AYUDA A GNU",
+            "to": "/help"
+        },
+        {
+            "key": "docs",
+            "label": "DOCUMENTACIÓN",
+            "to": "/docs"
+        }
+    ],
+    "whatIsGNU": {
+        "title": "¿Qué es GNU?",
+        "text1": "GNU es un sistema operativo que es <url>software libre</url>, lo que significa que respeta la libertad de los usuarios. El sistema GNU incluye paquetes GNU (programas publicados por el Proyecto GNU) y software libre de terceros. El desarrollo de GNU hizo posible usar una computadora sin software que restrinja tu libertad.",
+        "text2": "Recomendamos <url>versiones instalables de GNU</url> (más precisamente, distribuciones GNU/Linux) que sean completamente software libre. <url2>Aprendé más sobre GNU a continuación</url2>.",
+        "buttonText": "Probar GNU/Linux"
+    },
+    "slidesTexts": [
+        "Dragora 3.0-beta2 con el escritorio TDE",
+        "Guix 0.15 con el escritorio GNOME 3, el navegador Epiphany, el reproductor de video Totem y el emulador de terminal de GNOME",
+        "Hyperbola 0.3 con el gestor de ventanas i3, cool-retro-term (emulador de terminal), Gimp (editor de imágenes) e Iceweasel-UXP (navegador web)",
+        "Parabola 2020 con escritorio LXDE",
+        "PureOS 8 con escritorio GNOME 3, PureBrowser (navegador web) y Gimp (editor de imágenes)",
+        "Trisquel 10 con escritorio MATE y parte del paquete ofimático LibreOffice"
+    ],
+    "freeSoftwareMovement": {
+        "title": "¿Qué es el Movimiento de Software Libre?",
+        "text": "El movimiento de software libre lucha por la libertad de los usuarios a través del software libre. El software libre le da el control al usuario. El software privativo le da el control a su desarrollador. Mirá la explicación en video."
+    },
+    "freeSoftware": {
+        "title": "¿Qué es el Software Libre?",
+        "header": "El software libre da a los usuarios la libertad de ejecutar, copiar, distribuir, estudiar, cambiar y mejorar el software.",
+        "text": "El software libre trata sobre libertad, no sobre precio. Pensá en “libre” como en “libertad de expresión”, no como en “cerveza gratis”. Otorga a los usuarios cuatro libertades esenciales:",
+        "freedoms": [
+            "La libertad de ejecutar el programa como desees, con cualquier propósito (libertad 0).",
+            "La libertad de estudiar cómo funciona el programa y adaptarlo a tus necesidades (libertad 1). El acceso al código fuente es un requisito previo.",
+            "La libertad de redistribuir copias para ayudar a otros (libertad 2).",
+            "La libertad de distribuir versiones modificadas (libertad 3), para que la comunidad se beneficie. El acceso al código fuente es un requisito previo."
+        ]
+    },
+    "text2": "Los desarrollos tecnológicos y de redes han hecho que estas libertades sean más importantes hoy que nunca. El movimiento de software libre ahora se extiende mucho más allá del sistema GNU. Visitá la Free Software Foundation para saber más y descubrir cómo podés ayudar.",
+    "moreAboutGnu": {
+        "title": "Más sobre GNU",
+        "text1": "GNU es un sistema operativo similar a Unix. Eso significa que es una colección de muchos programas: aplicaciones, bibliotecas, herramientas de desarrollo, incluso juegos. El desarrollo de GNU, iniciado en enero de 1984, es conocido como el Proyecto GNU. Muchos de los programas en GNU se publican bajo los auspicios del Proyecto GNU; a estos los llamamos paquetes GNU.",
+        "text2": "El nombre “GNU” es un acrónimo recursivo de “GNU's Not Unix” (“GNU No es Unix”). “GNU” se pronuncia g'nu, como una sola sílaba, parecido a “grú” pero reemplazando la r por una n.",
+        "text3": "El programa en un sistema tipo Unix que asigna recursos de la máquina y se comunica con el hardware se llama “kernel” o núcleo. GNU se usa normalmente con un núcleo llamado Linux. Esta combinación es el sistema operativo GNU/Linux. GNU/Linux es utilizado por millones, aunque muchos lo llaman “Linux” por error.",
+        "buttonText": "Más información"
+    }
 }

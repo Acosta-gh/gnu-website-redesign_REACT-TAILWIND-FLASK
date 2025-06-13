@@ -8,13 +8,7 @@ function Header() {
     const { t } = useTranslation();
     const [isOpen, setOpen] = useState(false);
 
-    const navItems = [
-        { label: 'ABOUT_GNU', to: '/about' },
-        { label: 'PHILOSOPHY', to: '/philosophy' },
-        { label: 'SOFTWARE', to: '/software' },
-        { label: 'HELP_GNU', to: '/help' },
-        { label: 'DOCS', to: '/docs' },
-    ];
+    const navItems = t('headerMenu', { returnObjects: true });
 
     const langItems = [
         { label: 'En' },

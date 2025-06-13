@@ -1,6 +1,14 @@
 import React from 'react';
 
-function GradientImage({ src, alt, containerClass = '', imageClass = '' }) {
+function GradientImage({
+  src,
+  alt,
+  containerClass = '',
+  imageClass = '',
+  colorTop = 'rgba(255,255,255,0)',
+  colorBottom = 'var(--primary-color)'
+}) {
+  const gradientStyle = `linear-gradient(to bottom, ${colorTop} 0%, ${colorBottom} 100%)`;
   return (
     <div className={`relative ${containerClass}`}>
       <div className="relative">
@@ -13,7 +21,7 @@ function GradientImage({ src, alt, containerClass = '', imageClass = '' }) {
       <div
         className="pointer-events-none absolute left-0 right-0 bottom-0 h-1/3"
         style={{
-          background:'linear-gradient(to bottom, rgba(255,255,255,0) 0%, var(--primary-color) 100%)'
+          background: gradientStyle
         }}
       />
     </div>
