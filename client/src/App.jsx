@@ -1,6 +1,6 @@
 import Layout from './components/Layout';
 import { useTranslation, Trans } from 'react-i18next';
-import { Slide } from 'react-awesome-reveal';
+import { Slide, Fade } from 'react-awesome-reveal';
 import GradientImage from './components/UI/GradientImage';
 import { Link } from 'react-router-dom';
 import Button from './components/UI/Button';
@@ -10,7 +10,6 @@ function App() {
   const { t } = useTranslation();
   const freedoms = t('freeSoftware.freedoms', { returnObjects: true });
   const slidesTexts = t('slidesTexts', { returnObjects: true });
-
 
   const images = [
     "/images/distros/dragora.jpg",
@@ -22,14 +21,12 @@ function App() {
   ];
 
   const slidesDistros = images.map((image, i) =>
-  ( 
+  (
     {
-      image:image,
+      image: image,
       text: slidesTexts[i]
     }
   ));
-
-
 
   return (
     <>
@@ -100,60 +97,70 @@ function App() {
           <Button className="mt-5" text={t('whatIsGNU.buttonText')} bgColor="bg-[var(--primary-color)]" />
         </section>
 
-        {/* Sección Distros */}
-        <section className='p-5 pt-10 md:pl-[20%] md:pr-[20%] '>
-          <Slideshow slides={slidesDistros} />
-        </section>
+        <Fade triggerOnce duration={800}>
+          {/* Sección Distros */}
+          <section className='p-5 pt-10 md:pl-[20%] md:pr-[20%] '>
+            <Slideshow slides={slidesDistros} />
+          </section>
+        </Fade>
+        <Fade triggerOnce duration={800}>
 
-        {/* Sección Movimiento de Software Libre */}
-        <section className='p-5 pt-13 md:pl-[10%] md:pr-[10%] '>
-          <h2 className='font-bold text-4xl text-red-900 mb-10 flex justify-center items-center'>
-            {t('freeSoftwareMovement.title')}
-          </h2>
-          <p>{t('freeSoftwareMovement.text')}</p>
-        </section>
+          {/* Sección Movimiento de Software Libre */}
+          <section className='p-5 pt-13 md:pl-[10%] md:pr-[10%] '>
+            <h2 className='font-bold text-4xl text-red-900 mb-10 flex justify-center items-center'>
+              {t('freeSoftwareMovement.title')}
+            </h2>
+            <p>{t('freeSoftwareMovement.text')}</p>
+          </section>
+        </Fade>
+        <Fade triggerOnce duration={800}>
 
-        {/* Sección de Software Libre */}
-        <section className='p-5 pt-13 md:pl-[10%] md:pr-[10%]'>
-          <h2 className='font-bold text-4xl text-red-900 mb-10 flex justify-center items-center'>
-            {t('freeSoftware.title')}
-          </h2>
-          <h3 className='font-bold my-2'>{t('freeSoftware.header')}</h3>
-          <p>{t('freeSoftware.text')}</p>
-          <ul className='list-disc ml-5 my-3'>
-            {
-              freedoms.map((freedom, i) => {
-                return <li key={i}>{freedom}</li>
-              })
-            }
-          </ul>
-        </section>
+          {/* Sección de Software Libre */}
+          <section className='p-5 pt-13 md:pl-[10%] md:pr-[10%]'>
+            <h2 className='font-bold text-4xl text-red-900 mb-10 flex justify-center items-center'>
+              {t('freeSoftware.title')}
+            </h2>
+            <h3 className='font-bold my-2'>{t('freeSoftware.header')}</h3>
+            <p>{t('freeSoftware.text')}</p>
+            <ul className='list-disc ml-5 my-3'>
+              {
+                freedoms.map((freedom, i) => {
+                  return <li key={i}>{freedom}</li>
+                })
+              }
+            </ul>
+          </section>
+        </Fade>
+        <Fade triggerOnce duration={800}>
 
-        {/* Sección de que es GNU */}
-        <section className='p-5 pt-13 md:pl-[10%] md:pr-[10%]  '>
-          <h2 className='font-bold text-4xl text-red-900 mb-10 flex justify-center items-center'>
-            {t('moreAboutGnu.title')}
-          </h2>
-          <p className='my-2'>{t('moreAboutGnu.text1')}</p>
-          <p className='my-2'>{t('moreAboutGnu.text2')}</p>
-          <p className='my-2'>{t('moreAboutGnu.text3')}</p>
-          <Button className="mt-5" text={t('moreAboutGnu.buttonText')} bgColor="bg-[var(--primary-color)]" />
-        </section>
-        {/*  */}
-        <section className='p-5 pt-13 md:pl-[10%] md:pr-[10%]'>
-          <blockquote>
-            <i className='text-center text-gray-700 font-light'>
-              “The Free Software Foundation (FSF) is a nonprofit with a worldwide mission to promote computer user freedom. We defend the rights of all software users.”
-            </i>
-          </blockquote>
+          {/* Sección de que es GNU */}
+          <section className='p-5 pt-13 md:pl-[10%] md:pr-[10%]  '>
+            <h2 className='font-bold text-4xl text-red-900 mb-10 flex justify-center items-center'>
+              {t('moreAboutGnu.title')}
+            </h2>
+            <p className='my-2'>{t('moreAboutGnu.text1')}</p>
+            <p className='my-2'>{t('moreAboutGnu.text2')}</p>
+            <p className='my-2'>{t('moreAboutGnu.text3')}</p>
+            <Button className="mt-5" text={t('moreAboutGnu.buttonText')} bgColor="bg-[var(--primary-color)]" />
+          </section>
+        </Fade>
+        <Fade triggerOnce duration={800}>
+          {/*  */}
+          <section className='p-5 pt-13 md:pl-[10%] md:pr-[10%]'>
+            <blockquote>
+              <i className='text-center text-gray-700 font-light'>
+                “The Free Software Foundation (FSF) is a nonprofit with a worldwide mission to promote computer user freedom. We defend the rights of all software users.”
+              </i>
+            </blockquote>
 
-          <div className='mt-5 flex flex-row justify-center gap-5'>
-            <Button text="Join" bgColor="bg-[var(--primary-color)] cursor-pointer" />
-            <Button text="Donate" bgColor="bg-blue-600 cursor-pointer" />
-            <Button text="Shop" bgColor="bg-green-800 cursor-pointer" />
-          </div>
-        </section>
-      </Layout>
+            <div className='mt-5 flex flex-row justify-center gap-5'>
+              <Button text="Join" bgColor="bg-[var(--primary-color)] cursor-pointer" />
+              <Button text="Donate" bgColor="bg-blue-800 cursor-pointer" />
+              <Button text="Shop" bgColor="bg-green-800 cursor-pointer" />
+            </div>
+          </section>
+        </Fade>
+      </Layout >
     </>
   );
 }
